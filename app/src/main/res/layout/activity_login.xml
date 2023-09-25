@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343434"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="290dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginStart="32dp"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="#ffff"/>
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:drawableStart="@drawable/email"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:hint="Email"
+                android:textColorHint="#ffff"
+                android:padding="8dp"
+                android:drawablePadding="16dp"
+                android:maxEms="10"
+                />
+            <EditText
+                android:id="@+id/edittextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:drawableStart="@drawable/password"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:hint="Password"
+                android:textColorHint="#ffff"
+                android:padding="8dp"
+                android:drawablePadding="16dp"
+                android:maxEms="10"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_login"
+                android:layout_gravity="end"
+                android:layout_marginTop="16sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:id="@+id/btn3"
+                style="@android:style/Widget.Button"
+                android:textColor="#ffff"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="32dp"
+                android:drawableStart="@drawable/google"
+                android:drawablePadding="16dp"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Singup With google"
+                android:background="@drawable/background_btn2"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:id="@+id/btn4"
+                style="@android:style/Widget.Button"
+                android:textColor="#ffff"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:drawableStart="@drawable/facebook"
+                android:drawablePadding="16dp"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Singup With facebook"
+                android:background="@drawable/background_btn2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:text="Are you new user ? Register"
+                android:textColor="#E1A500"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:textAlignment="center"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
